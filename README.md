@@ -8,7 +8,7 @@ This project uses SQL within the MySQL Workbench database. Furthermore, OOP Pyth
 
 Please refer to the logical_design.pdf in the repo to understand the relationships of the schema.
 
-# Running the application
+## Running the application
 
 First, run the simple_spotify.sql in Workbench to create the database containing all the tables needed, as well as the necessary data populated into the necessary tables. This is required before running the Python application code. 
 
