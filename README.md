@@ -6,11 +6,13 @@ The command-line application built will allow users to perform CRUD operations. 
 
 This project uses SQL within the MySQL Workbench database. Furthermore, OOP Python is used for the application. The application requires connection/access to MYSQL Workbench in order to run the schema as well as being able to open/run Python files. If you don't have, software like MYSQL Workbench, there maybe a need to install it.
 
-First, runn the simple_spotify.sql in Workbench to create the database containing all the tables needed, as well as the necessary data populated into the necessary tables. This is required before running the Python application code. 
+Please refer to the logical_design.pdf in the repo to understand the relationships of the schema.
+
+# Running the application
+
+First, run the simple_spotify.sql in Workbench to create the database containing all the tables needed, as well as the necessary data populated into the necessary tables. This is required before running the Python application code. 
 
 The application code is made up of five files: main.py, setup.py, account.py, playlist.py, and song_artist_album.py. The account.py holds the Account class containing methods for  deleting and updating the user account. The playlist.py holds the Playlist class containing methods involved with anything playlist related. The song_artist_album_functions.py holds the SongArtistAlbum class containing methods that read data from the song, artist, and album database tables. The setup.py contains functions and the Setup Class which call/run methods in the previously mentioned files as well as logging/creating users. 
-
-Please refer to the logical_design.pdf in the repo to understand the relationships of the schema.
 
 When you run the main.py file, it will ask for your MYSQL username and password. Please enter this in order to automatically connect to the project database in Workbench. The application will connect to the database through pymysql, which is already imported in the application code. 
 
